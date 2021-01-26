@@ -1,1 +1,7 @@
 <img [src]="getImageURL()" alt="">
+<br>
+<button [disabled]="isDisabled">Clica aqui</button>
+<br>
+<p [attr.aria-label]="isDisabled ?'botão desabilitado':texto">
+Texto qualquer...
+</p>

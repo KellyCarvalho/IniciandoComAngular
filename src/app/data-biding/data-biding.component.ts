@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBidingComponent implements OnInit {
 imgURL ="https://uploads.metropoles.com/wp-content/uploads/2019/12/23145319/yoda-600x400.jpg";
-  constructor() { }
+isDisabled=true;  
+texto="Bem vinda";
+constructor() {
+setTimeout(() => {
+  this.isDisabled=false;
+}, 12000);
+
+ }
 
   ngOnInit(): void {
   }
