@@ -1,7 +1,26 @@
-<img [src]="getImageURL()" alt="">
-<br>
-<button [disabled]="isDisabled">Clica aqui</button>
-<br>
-<p [attr.aria-label]="isDisabled ?'botão desabilitado':texto">
-Texto qualquer...
-</p>
+    <h1>Exemplos Event binding</h1>
+
+  valor Contador: {{valorContador}}
+    <input type="text" [value]="palavra" (keyup)="OnkeyUp($event)">
+    <p>Tempo real: {{textoTempoReal}} </p>
+    <app-contador>
+        [(valor)]="valorContador" 
+    
+    </app-contador>
+
+    <button (click)="onClick($event)">Não clica aqui</button>
+
+    <button (click)="OnClickEmmit($event)">
+        Enviar Informações de clique
+    </button>
+
+    <h1>Exemplos Event binding</h1>
+    <h2>Palavra:{{palavra}} </h2>
+    <H2>Cor favorita: {{color}} </H2>
+    <img [src]="getImageURL()" alt="">
+    <br>
+    <button [disabled]="isDisabled">Clica aqui</button>
+    <br>
+    <p [attr.aria-label]="isDisabled ?'botão desabilitado':texto">
+    Texto qualquer...
+    </p>

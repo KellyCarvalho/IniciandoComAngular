@@ -1,6 +1,15 @@
 
-<app-header></app-header>
 
-<app-data-biding></app-data-biding>
+    <app-header [title]="titulo" ></app-header>
+    <app-contador>
+        [(valor)]="valorChange"
 
-<app-footer></app-footer>
+    </app-contador>
+
+    <app-data-biding [palavra]="palavraPassada" [color]="favoriteColor" ></app-data-biding>
+    (clicado)="eventoRecebido($event)";
+
+    <app-diretivas></app-diretivas>
+
+
+    <app-footer></app-footer>

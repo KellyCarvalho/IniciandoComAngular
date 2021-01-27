@@ -6,13 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'meuPrimeiroProjetoAngular';
-  titulo ='meu primeiro projeto angular'
+  palavraPassada ="Qualquer Palavra";
+  favoriteColor="red";
+  titulo ='Socorro';
 
   constructor(){
     setTimeout(() => {
-      this.titulo='mudança após 3 segundos'
+      this.titulo='socorro após 3 segundos'
     }, 3000);
+  }
+
+  eventoRecebido($event){
+    console.log('App component: Event Emmiter', $event);
+  }
+  OnValorAtual(novoValor){
+    console.log('OnValorAtual',novoValor);
   }
 
 }

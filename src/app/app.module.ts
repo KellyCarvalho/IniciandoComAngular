@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { ContadorComponent } from './contador/contador.component';
+import { DiretivasComponent } from './diretivas/diretivas.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    DataBidingComponent
+    DataBidingComponent,
+    ContadorComponent,
+    DiretivasComponent
   ],
   imports: [
     BrowserModule
